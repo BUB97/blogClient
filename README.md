@@ -1,3 +1,9 @@
+# blogClient
+## 简介
+这是一个博客网站的前端代码，是用React实现的，并且使用了数据管理工具Redux。CSS是使用的CSS Module的方式。因为是通过create-react-app脚手架创建的，所以不需要配置webpack就可以直接实现CSS Modules。
+
+# ————————————————————————————————————————————————————————————————————————————————————————————————
+# Origin README.md
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +72,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# blogClient
+
