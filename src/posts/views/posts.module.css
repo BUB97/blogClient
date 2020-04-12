@@ -1,0 +1,139 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em 1em;
+    min-height: 45em;
+    align-items: stretch;
+}
+
+.nav{
+    flex: 0 0 15em;
+    background-color: rgb(134,126,118,0.5);
+}
+
+.posts{
+    flex: 1;
+    background-color: rgb(251,236,222,0.7);
+    margin-left: 0.5em;
+    font-size: large;
+}
+
+.add{
+    border: none;
+    outline: none;
+    margin: 1em 2em;
+    font-size: large;
+    padding: 0.3em 1em;
+    background-color: rgb(134,126,118,0.8);
+}
+
+
+.postBox{
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post{
+    flex: 1;
+    text-decoration: none;
+    color: rgb(47,47,53);
+}
+
+.delete{
+    flex: 0 0 5em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(47,47,53);
+}
+
+.postDetail{
+    background-color: rgb(251,236,222,0.7);
+    margin: 0.5em 1em;
+    padding: 1em 2em;
+    min-height: 45em;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin: auto;
+    flex: 0 0 2em;
+}
+
+.content{
+    flex: 1;
+    margin-left: 2em;
+}
+
+.addPosts{
+    background-color: rgb(251,236,222,0.7);
+    margin: 0.5em 1em;
+    padding: 1em 2em;
+    min-height: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+}
+
+.postTitle{
+    margin: 0.5em 2em;
+    flex: 0 0 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.postContent{    
+    margin: 0.5em 2em;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.label{
+    margin-right: 2em;
+    font-size: large;
+    flex: 0 0 3em;
+}
+
+.titleInput{
+    flex: 1;
+    height: 2.3em;
+    padding: 0 1em;
+    border: none;
+    outline: none;
+    border-radius: 5%;
+    font-size: medium;
+    background-color: rgb(256,256,256,0.8);
+}
+
+.contentInput{
+    flex: 1;
+    padding: 1em;
+    font-size: larger;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 1%;
+    background-color: rgb(256,256,256,0.8);
+}
+
+.save{
+    flex: 0 0 2em;
+    align-self: center;
+}
+
+.saveButton{    
+    border: none;
+    outline: none;
+    font-size: medium;
+    padding: 0.2em 0.5em;
+    background-color: rgb(134,126,118);
+    color: rgb(247,247,237);
+    border-radius: 8%;
+}

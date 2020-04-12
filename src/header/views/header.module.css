@@ -1,0 +1,54 @@
+
+.header{
+    background-color: rgb(134,126,118);
+    margin: 0.5em 1em;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    text-decoration: none;
+    color:rgb(57,55,51);
+    font-size: 2em;
+    font-family: 'Indie Flower', cursive;
+    margin-left: 1em;
+    line-height: 100px;
+    flex: 1;
+}
+
+.loginLink{
+    color: rgb(57,55,51);
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 1em;
+    flex: 0 0 3em;
+}
+
+.loginLink:hover{
+    color:rgb(104,94,72)
+}
+
+.footer{
+    background-color: rgb(134,126,118);
+    margin: 0.5em 1em;
+}
+
+.userInfo{
+    flex: 0 1 15em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.welcome{
+    color: rgb(57,55,51);
+    flex: 0 0 10em;
+    margin-right: 1em;
+}
+
+.logout{
+    flex: 0 0 3em;
+}
