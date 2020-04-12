@@ -3,7 +3,7 @@
 这是一个博客网站的前端代码，是用React实现的，并且使用了数据管理工具Redux。CSS是使用的CSS Module的方式。因为是通过create-react-app脚手架创建的，所以不需要配置webpack就可以直接实现CSS Modules。
 
 # ————————————————————————————
-# Origin README.md
+# Original README.md
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
