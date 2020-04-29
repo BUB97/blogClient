@@ -2,26 +2,21 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 
 import thunk from 'redux-thunk';
 
-import { reducer as postsReducer, postsInitValue } from './posts/index';
-import { reducer as loginReucer, currentUserInitValue} from './login/index' 
+import { reducer as postsReducer } from './posts/index';
+import { reducer as userReducer } from './header/index';
 
 const reducer = combineReducers({
     posts: postsReducer,
-    currentUser: loginReucer
+    currentUser: userReducer
 });
 
 const win = window;
 
 const middlewares = [thunk];
 
-const initValue = {
-    posts: postsInitValue,
-    currentUser: currentUserInitValue
-}
-
 const storeEnhancers = compose(
     applyMiddleware(...middlewares),
-    (win && win.devToolsExtension)?win.devToolsExtension():(f)=>f,
+    (win && win.devToolsExtension) ? win.devToolsExtension() : (f) => f,
 );
 
-export default createStore(reducer,initValue,storeEnhancers);
+export default createStore(reducer, storeEnhancers);

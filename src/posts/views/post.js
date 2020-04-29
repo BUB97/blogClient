@@ -14,7 +14,7 @@ const Post = ({id, title, content, currentUser, onDelete}) => {
             <h3 className='post_title'>{title}</h3>
             <p className='post_content'>{content}</p>
             </Link>
-            {currentUser?<button className={postsStyle.delete} onClick={onDelete}>删除</button>:null}
+            {currentUser.status?<button className={postsStyle.delete} onClick={onDelete}>删除</button>:null}
         </div>
     );
 };

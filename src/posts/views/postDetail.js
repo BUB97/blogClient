@@ -8,6 +8,7 @@ class PostDetail extends React.Component {
         this.state = {
             post: null
         };
+        this.refreshPost = this.refreshPost.bind(this);
     }
 
     componentWillMount() {

@@ -17,7 +17,7 @@ class Posts extends Component {
                 <div className={postsStyle.container}>
                 <div className={postsStyle.nav}></div>
                 <div className={postsStyle.posts}>
-                    {this.props.currentUser?<Link to='/posts/add' className={postsStyle.addLink}><button className={postsStyle.add}>+</button></Link>:null}
+                    {this.props.currentUser.status?<Link to='/posts/add' className={postsStyle.addLink}><button className={postsStyle.add}>+</button></Link>:null}
                     {
                         this.props.posts.map((post) => (
                             <Post
@@ -35,7 +35,7 @@ class Posts extends Component {
         else {
             return (
                 <div>
-                    {this.props.currentUser?<Link to='/posts/add'><button>+</button></Link>:null}
+                    {this.props.currentUser.status?<Link to='/posts/add'><button>+</button></Link>:null}
                     <span>还没有文章😵</span>
                 </div>
             )

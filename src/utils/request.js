@@ -1,7 +1,8 @@
 //包装服务端通信函数
 function get(url){
     return fetch(url,{
-        method: "GET"
+        method: "GET",
+        credentials: 'include'
     }).then(response => {
         return handleResponse(url,response);
     }).catch(err => {
@@ -18,6 +19,7 @@ function post(url,data){
     let bodyInfo=arr.join("&");
     return fetch(url,{
         method: "POST",
+        credentials: 'include',
         headers: {
             "origin": "http://localhost:3000",
             "Content-Type": "application/x-www-form-urlencoded"
